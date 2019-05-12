@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="APBeranda" minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.JualController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="574.0" prefWidth="1108.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="223.0" prefWidth="1047.0">
+               <children>
+                  <HBox prefHeight="215.0" prefWidth="499.0">
+                     <children>
+                        <VBox prefHeight="195.0" prefWidth="408.0">
+                           <children>
+                              <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="834.0" promptText="NO FAKTUR">
+                                 <VBox.margin>
+                                    <Insets right="100.0" top="30.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                              <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="390.0" promptText="NAMA PELANGGAN">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="390.0" promptText="NAMA BARANG">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <HBox prefHeight="38.0" prefWidth="535.0">
+                                 <children>
+                                    <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="117.0" promptText="JUMLAH">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="254.0" promptText="SATUAN" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="165.0" prefWidth="9.0" style="-fx-background-color: #00266e;">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Pane>
+                  <VBox prefHeight="175.0" prefWidth="509.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL ITEM" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                 <HBox.margin>
+                                    <Insets left="38.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL QTY" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                 <HBox.margin>
+                                    <Insets left="42.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL HARGA" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KEMBALIAN/SISA" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="10.0" top="30.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </HBox>
+            <JFXTreeTableView prefHeight="346.0" prefWidth="1047.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+               <columns>
+                  <TreeTableColumn prefWidth="203.0" text="Nama Barang" />
+                  <TreeTableColumn prefWidth="269.0" text="Deskripsi" />
+                  <TreeTableColumn prefWidth="116.0" text="Harga Barang" />
+                  <TreeTableColumn prefWidth="201.0" text="Jumlah" />
+                  <TreeTableColumn prefWidth="120.0" text="Tanggal Eks" />
+                  <TreeTableColumn prefWidth="137.0" text="SubHarga" />
+               </columns>
+            </JFXTreeTableView>
+            <Pane prefHeight="20.0" prefWidth="1107.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </Pane>
+         </children>
+         <padding>
+            <Insets right="1.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

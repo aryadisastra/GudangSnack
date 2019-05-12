@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="APBarang" minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PelangganController">
+   <children>
+      <HBox prefHeight="574.0" prefWidth="1108.0">
+         <children>
+            <VBox prefHeight="574.0" prefWidth="397.0">
+               <children>
+                  <JFXTextField labelFloat="true" promptText="NAMA PELANGGAN">
+                     <VBox.margin>
+                        <Insets left="30.0" right="20.0" top="150.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea labelFloat="true" prefHeight="66.0" prefWidth="390.0" promptText="ALAMAT ">
+                     <VBox.margin>
+                        <Insets left="30.0" right="20.0" top="15.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <JFXTextField labelFloat="true" promptText="KONTAK">
+                     <VBox.margin>
+                        <Insets left="30.0" right="20.0" top="15.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <VBox prefHeight="23.0" prefWidth="427.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS" underline="true">
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="30.0" right="300.0" top="20.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <JFXCheckBox checkedColor="#4e33fc" prefHeight="18.0" prefWidth="487.0" text="Family" unCheckedColor="#030000">
+                     <VBox.margin>
+                        <Insets left="70.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXCheckBox>
+                  <JFXButton prefHeight="25.0" prefWidth="300.0" style="-fx-border-color: BLACK;" textOverrun="CENTER_ELLIPSIS">
+                     <VBox.margin>
+                        <Insets left="60.0" right="40.0" top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane prefHeight="574.0" prefWidth="51.0" style="-fx-background-color: #00266e;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Pane>
+            <VBox prefHeight="574.0" prefWidth="761.0">
+               <children>
+                  <HBox prefHeight="37.0" prefWidth="657.0">
+                     <children>
+                        <JFXTextField focusColor="#0c0f17" labelFloat="true" prefHeight="25.0" prefWidth="350.0" promptText="SEARCH">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <Pane prefHeight="37.0" prefWidth="3.0" style="-fx-background-color: #00266e;" />
+                        <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="296.0" promptText="STATUS">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </JFXComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="20.0" top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXTreeTableView prefHeight="454.0" prefWidth="248.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <columns>
+                        <TreeTableColumn prefWidth="196.0" text="NAMA" />
+                        <TreeTableColumn minWidth="0.0" prefWidth="250.0" text="ALAMAT" />
+                        <TreeTableColumn prefWidth="143.0" text="KONTAK" />
+                        <TreeTableColumn maxWidth="164.0" prefWidth="103.0" text="STATUS" />
+                     </columns>
+                  </JFXTreeTableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

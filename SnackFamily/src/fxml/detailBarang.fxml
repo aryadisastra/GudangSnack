@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailBarangController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="209.0" layoutY="56.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Detail Barang">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Pane prefHeight="3.0" prefWidth="512.0" style="-fx-background-color: black;">
+               <VBox.margin>
+                  <Insets left="100.0" right="100.0" top="5.0" />
+               </VBox.margin>
+            </Pane>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID " />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="92.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="txtId" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="71.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DESKRIPSI" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="52.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HARGA BELI" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="42.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HARGA JUAL" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="38.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="70.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL MASUK" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL EKS" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="31.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="512.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SUPLIER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+                     <HBox.margin>
+                        <Insets left="63.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Riwayat Harga ">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+            </Text>
+            <JFXTreeTableView prefHeight="221.0" prefWidth="432.0">
+               <columns>
+                  <TreeTableColumn prefWidth="38.0" text="No" />
+                  <TreeTableColumn prefWidth="140.0" text="Harga Jual" />
+                  <TreeTableColumn prefWidth="140.0" text="Harga Beli" />
+                  <TreeTableColumn prefWidth="113.0" text="Tanggal" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="10.0" />
+               </VBox.margin>
+            </JFXTreeTableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

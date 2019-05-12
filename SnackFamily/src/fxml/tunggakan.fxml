@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="APBeranda" minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TunggakanController">
+   <children>
+      <ScrollPane fx:id="SPTunggak">
+         <content>
+            <VBox alignment="CENTER" prefHeight="565.0" prefWidth="1100.0">
+               <children>
+                  <HBox prefHeight="168.0" prefWidth="1047.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox prefHeight="52.0" prefWidth="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PILIH TUNGGAKAN">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" right="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <JFXRadioButton selected="true" text="SUPLIER">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="RBChoice" />
+                                 </toggleGroup>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </JFXRadioButton>
+                              <JFXRadioButton contentDisplay="TOP" text="PELANGGAN" toggleGroup="$RBChoice">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="15.0" />
+                                 </VBox.margin>
+                              </JFXRadioButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="93.0" prefWidth="662.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CARI BERDASARKAN     :" />
+                              <HBox prefHeight="34.0" prefWidth="664.0">
+                                 <children>
+                                    <JFXTextField labelFloat="true" prefWidth="280.0" promptText="SEARCH WORD">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <Pane prefWidth="3.0" style="-fx-background-color: black;">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Pane>
+                                    <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="280.0" promptText="NAMA SUPLIER">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="10.0" />
+                                       </HBox.margin>
+                                    </JFXComboBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <JFXButton onAction="#moveBayar" prefHeight="27.0" prefWidth="144.0" style="-fx-border-color: black;" text="BAYAR">
+                           <HBox.margin>
+                              <Insets left="20.0" top="60.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXTreeTableView prefHeight="449.0" prefWidth="1047.0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <columns>
+                        <TreeTableColumn prefWidth="35.0" text="No" />
+                        <TreeTableColumn prefWidth="280.0" text="Nama Suplier" />
+                        <TreeTableColumn prefWidth="90.0" text="Jumlah Item" />
+                        <TreeTableColumn prefWidth="135.0" text="Total Harga" />
+                        <TreeTableColumn prefWidth="135.0" text="Total Bayar" />
+                        <TreeTableColumn minWidth="0.0" prefWidth="135.0" text="Sisa" />
+                        <TreeTableColumn maxWidth="121.0" prefWidth="100.0" text="Tanggal" />
+                        <TreeTableColumn prefWidth="136.0" text="Status" />
+                     </columns>
+                  </JFXTreeTableView>
+               </children>
+               <padding>
+                  <Insets right="1.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

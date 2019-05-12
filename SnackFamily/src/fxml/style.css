@@ -1,0 +1,193 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 6, 2019, 10:25:22 AM
+    Author     : TRISNA NURDIANA
+*/
+.pane:hover{
+    -fx-background-color: #abaaaa;
+}
+.tableView{
+    -fx-border-color: none;
+    -fx-border-width: 0;
+}
+.tableColumn{
+}
+
+* {
+    -fx-primary : #c4dcff;
+    -fx-secondary : #245082;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-green:#2E7D32;
+}
+
+.bg-reset-password{
+   -fx-background-image: url("cloud.jpg");
+   -fx-background-size: 70%;   
+   -fx-opacity: 0.7;
+}
+
+.bg-login{
+   -fx-background-image: url("cloud.jpg");
+   -fx-background-size: 100%;   
+   -fx-opacity: 0.7;
+}
+
+.bg-adminUI{
+   -fx-background-image: url("night.jpg");
+   -fx-background-size: 150%;   
+   -fx-opacity: 0.7;
+}
+
+.bg-guruUI{
+   -fx-background-image: url("sky.png");
+   -fx-background-size: 150%;   
+   -fx-opacity: 0.7;
+}
+
+.bg-addGuru{
+   -fx-background-image: url("bg.png");
+   -fx-background-size: 150%;   
+   -fx-opacity: 0.7;
+}
+
+.lbl-status{
+    -fx-background-color: #8aa9ff;
+    -fx-text-fill: #fff;
+    -fx-alignment: CENTER;
+    -fx-background-radius: 8px;
+}
+
+.lbl-siswa{
+    -fx-text-fill: black;
+    -fx-alignment: CENTER;
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+}
+
+.lbl-angka{
+    -fx-border-color: white;
+    -fx-border-radius: 6px;
+    -fx-border-width: 3px;
+    -fx-font-color: white;
+}
+
+.btn-login{
+    -fx-background-color: #558bdb;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+}
+
+.btn-ui{
+    -fx-background-color: #274f7c;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+}
+.btn-delete{
+    -fx-background-color: #cc5e5e;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+}
+
+.btn-refresh{
+    -fx-background-color: #5ac765;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 8px;
+}
+
+.tab-pane{
+    -fx-tab-max-height: 0px;
+}
+
+.tab-pane .tab-header-area{
+    visibility: hidden;
+}
+
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 12px; 
+}
+.table-view:focused{
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+.table-row-cell {
+    -fx-cell-size: 30px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: darkslategray;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+}
+.table-view .table-cell{
+    -fx-text-fill: darkslategray;
+}
+.table-row-cell:focused, .table-cell:focused{
+    -fx-text-fill: -fx-primary;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;  
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: -fx-primary;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, 60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}

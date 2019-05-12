@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="APBarang" minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BayarTunggakanController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="7.0" prefHeight="545.0" prefWidth="460.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="545.0" prefWidth="380.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Form Bayar">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Pane prefHeight="2.0" prefWidth="484.0" style="-fx-background-color: black;">
+                     <VBox.margin>
+                        <Insets right="250.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <JFXTextField labelFloat="true" promptText="NO FAKTUR">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tunggakan" textAlignment="CENTER" wrappingWidth="354.83203125">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="30.0" />
+                     </VBox.margin>
+                  </Text>
+                  <JFXTextField labelFloat="true" promptText="NAMA SUPLIER">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField labelFloat="true" promptText="TOTAL BAYAR">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXButton prefHeight="25.0" prefWidth="618.0" style="-fx-border-color: black;">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="150.0" top="100.0" />
+               </HBox.margin>
+            </VBox>
+            <Pane prefHeight="545.0" prefWidth="21.0" style="-fx-background-color: black;">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Pane>
+            <VBox prefHeight="545.0" prefWidth="627.0">
+               <HBox.margin>
+                  <Insets bottom="100.0" left="20.0" right="20.0" />
+               </HBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Riwayat Bayar">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Pane prefHeight="3.0" prefWidth="3.0" style="-fx-background-color: black;">
+                     <VBox.margin>
+                        <Insets bottom="30.0" left="20.0" right="400.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <JFXTreeTableView prefHeight="301.0" prefWidth="609.0">
+                     <columns>
+                        <TreeTableColumn prefWidth="33.0" text="No" />
+                        <TreeTableColumn prefWidth="125.0" text="Tunggakan" />
+                        <TreeTableColumn prefWidth="125.0" text="Bayar" />
+                        <TreeTableColumn prefWidth="125.0" text="Sisa" />
+                        <TreeTableColumn prefWidth="100.0" text="Tanggal" />
+                        <TreeTableColumn prefWidth="100.0" text="Status" />
+                     </columns>
+                  </JFXTreeTableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

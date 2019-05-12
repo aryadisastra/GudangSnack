@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="APBarang" minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditBarangController">
+   <children>
+      <HBox alignment="CENTER" layoutX="300.0" prefWidth="387.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="545.0" prefWidth="3.0" style="-fx-background-color: black;">
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin>
+            </Pane>
+            <VBox prefHeight="545.0" prefWidth="380.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Form Edit Barang">
+                     <font>
+                        <Font name="Comic Sans MS" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Pane prefHeight="2.0" prefWidth="484.0" style="-fx-background-color: black;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Pane>
+                  <JFXTextField fx:id="TFIdBarang" labelFloat="true" promptText="ID BARANG">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="TFNamaBarang" labelFloat="true" promptText="NAMA BARANG">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="TADeskripsi" labelFloat="true" prefHeight="68.0" prefWidth="1064.0" promptText="DESKRIPSI">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="TFHargaBeli" labelFloat="true" promptText="HARGA BELI">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="TFHargaJual" labelFloat="true" promptText="HARGA JUAL">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox prefHeight="14.0" prefWidth="1064.0">
+                     <children>
+                        <JFXTextField fx:id="TFStock" labelFloat="true" prefHeight="25.0" prefWidth="352.0" promptText="STOCK">
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="CBSatuan" labelFloat="true" prefHeight="25.0" prefWidth="544.0" promptText="SATUAN" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <JFXDatePicker fx:id="DEks" prefHeight="25.0" prefWidth="624.0" promptText="TANGGAL EKS (dd-MM-yyyy)">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXDatePicker>
+                  <JFXComboBox fx:id="CBSuplier" labelFloat="true" prefHeight="25.0" prefWidth="535.0" promptText="PILIH SUPLIER">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <JFXButton fx:id="BEdit" onAction="#actionEdit" prefHeight="25.0" prefWidth="618.0" style="-fx-border-color: black;">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <Pane prefHeight="545.0" prefWidth="3.0" style="-fx-background-color: black;">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

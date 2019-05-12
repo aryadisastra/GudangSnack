@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="1094.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BarangController">
+   <children>
+      <ScrollPane fx:id="SPBarang" prefHeight="550.0" prefWidth="1094.0">
+         <content>
+            <AnchorPane fx:id="APBarang" minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="1084.0">
+               <children>
+                  <VBox prefHeight="574.0" prefWidth="1071.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="3.0">
+                     <children>
+                        <HBox prefHeight="40.0" prefWidth="816.0">
+                           <children>
+                              <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="250.0" promptText="SEARCH WORD">
+                                 <font>
+                                    <Font name="System Italic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Pane prefHeight="40.0" prefWidth="3.0" style="-fx-background-color: black;">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="20.0" />
+                                 </HBox.margin>
+                              </Pane>
+                              <JFXComboBox labelFloat="true" prefHeight="25.0" prefWidth="250.0" promptText="Urut Berdasarkan" />
+                              <JFXButton onAction="#actionTambah" prefHeight="0.0" prefWidth="100.0" style="-fx-border-color: black;" text="Tambah">
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton onAction="#actionEdit" prefWidth="100.0" style="-fx-border-color: black;" text="Edit">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                              <JFXButton onAction="#actionDetail" prefWidth="100.0" style="-fx-border-color: black;" text="Detail">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <TableView fx:id="TVBarang" onMouseClicked="#klikTable" prefHeight="454.0" prefWidth="974.0" styleClass="tableView" stylesheets="@style.css">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="20.0" />
+                           </VBox.margin>
+                           <columns>
+                              <TableColumn fx:id="colId" prefWidth="113.0" styleClass="tableColumn" text="ID" />
+                              <TableColumn fx:id="colNama" prefWidth="273.0" styleClass="tableColumn" text="Nama" />
+                              <TableColumn fx:id="colDeskripsi" prefWidth="259.0" styleClass="tableColumn" text="Deskripsi" />
+                              <TableColumn fx:id="colHargaJual" prefWidth="126.0" styleClass="tableColumn" text="Harga Jual" />
+                              <TableColumn fx:id="colStock" prefWidth="170.0" styleClass="tableColumn" text="Stock" />
+                              <TableColumn fx:id="colTglEks" prefWidth="127.0" styleClass="tableColumn" text="Tanggal Eks" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
